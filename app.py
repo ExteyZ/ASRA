@@ -1,8 +1,6 @@
 import gradio as gr
-   import ollama
 
    def chat(message):
-       response = ollama.generate(model="mistral", prompt=f"Tu es Asra. {message}")
-       return response["text"]
+       return f"Asra répond : '{message}' (mode test)"
 
-   gr.Interface(chat, inputs="textbox", outputs="textbox").launch(server_name="0.0.0.0")
+   gr.Interface(chat, inputs="text", outputs="text").launch()
