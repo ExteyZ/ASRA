@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+   <html>
+   <body>
+     <h1>Asra IA 🤖</h1>
+     <input type="text" id="userInput" placeholder="Parlez à Asra...">
+     <button onclick="getResponse()">Envoyer</button>
+     <p id="response"></p>
+
+     <script>
+       function getResponse() {
+         const input = document.getElementById("userInput").value;
+         const responses = {
+           "salut": "Hey ! Prêt à discuter ?",
+           "aide": "Je suis là pour te conseiller, demande-moi !"
+         };
+         document.getElementById("response").innerText = responses[input.toLowerCase()] || "Asra réfléchit...";
+       }
+     </script>
+   </body>
+   </html>
