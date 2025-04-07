@@ -1,5 +1,5 @@
 import gradio as gr
-   import ollama  # Importe la bibliothèque Ollama
+import ollama  # Importe la bibliothèque Ollama
 
    def chat(message):
        # Personnalisez ce prompt pour qu'Asra vous ressemble
