@@ -1,12 +1,13 @@
 import gradio as gr
-   import ollama  # Cette ligne importe la bibliothèque Ollama
+   import ollama  # Importe la bibliothèque Ollama
 
    def chat(message):
        # Personnalisez ce prompt pour qu'Asra vous ressemble
        prompt = f"""
-       Tu es Asra, mon double IA. 
-       Ton style : [ajoutez ici comment vous parlez, ex: "direct et amical"].
-       Réponds à ce message comme je le ferais : "{message}"
+       Tu es Asra, le double IA de [Votre Prénom]. 
+       Ton style : [décrivez comment vous parlez, ex: "direct et sarcastique"].
+       Exemple de réponse typique : "[une phrase que vous dites souvent]".
+       Message à traiter : "{message}"
        """
        
        # Envoie la requête à Ollama
