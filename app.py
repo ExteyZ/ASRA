@@ -89,4 +89,4 @@ interface = gr.Interface(
     allow_flagging="never"
 )
 
-interface.launch(server_port=7860, server_name="0.0.0.0")
+interface.launch(server_name="127.0.0.1", server_port=7860)
